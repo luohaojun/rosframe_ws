@@ -1,0 +1,9 @@
+<launch>
+    <node pkg="uavnav" type="pedol_05" name="note_pedol_05" output="screen">
+        <param name="field_config_file" type="string" value="$(find uavnav)/launch/pedol_05.yaml" />
+        <param name="force_start" type="bool" value="false" />
+    </node>
+</launch>
+
+
+

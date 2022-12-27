@@ -1,0 +1,32 @@
+<launch>
+
+<!--rosbag#####################################################################################################-->
+    <param name="/use_sim_time" value="true" />
+    <node pkg="rosbag" type="play" name="rosbag" args="-l /home/luo/EX_ws/src/rosbag/lRGB_dynamic111020hz.bag" />
+
+<!--pedol######################################################################################################-->
+
+
+    <!-- Manager -->
+    <node pkg="nodelet" type="nodelet" args="manager" name="Mg" output="screen"  >
+        
+    </node>
+
+    
+
+    <!-- TrackingNode -->
+    <node pkg="nodelet" type="nodelet" args="load pedol/TrackingNodeletClass Mg" name="TrackingNodeletClass" output="screen" >
+        <param name="AgentId"        type="int"    value="0"/>
+        <param name="AgentFrameId"   type="string" value="livox_frame" /> 
+        <remap from="/TrackingNodeletClass/in" to="/livox/lidar" />
+    </node>
+
+
+
+    
+
+
+<!--rviz#######################################################################################################-->
+    <node type="rviz" name="rviz" pkg="rviz" args="-d $(find pedol)/launch/rviz/livox.rviz" />
+
+</launch>

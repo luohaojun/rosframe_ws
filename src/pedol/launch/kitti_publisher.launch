@@ -1,0 +1,11 @@
+<launch>
+    <!-- groundtruth pubilisher -->
+    
+        <param name="/dataset_pub_delay"      type="double"  value="5.0" />
+        <param name="/dataset_pub_rate"       type="int"     value="30" />
+        <param name="/publish_gt"             type="bool"    value="true" />
+        <param name="/dataset_gt_file"        type="string"  value="/home/luo/rosframe_ws/src/pedol/example/00.txt" />
+    
+    <node pkg="pedol" type="kitti_publisher" name="kitti_publisher" output="screen" >
+    </node>
+</launch>

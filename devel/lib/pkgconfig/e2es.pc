@@ -1,0 +1,8 @@
+prefix=/home/luo/rosframe_ws/devel
+
+Name: e2es
+Description: Description of e2es
+Version: 0.1.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: roscpp gazebo_ros image_transport camera_info_manager sensor_msgs

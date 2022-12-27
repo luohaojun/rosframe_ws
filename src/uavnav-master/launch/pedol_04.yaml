@@ -1,0 +1,15 @@
+
+takeoff_x: 0.0
+takeoff_y: 0.0
+takeoff_z: 0.5
+
+center_of_circle_x: 2.5
+center_of_circle_y: 0.0
+center_of_circle_z: 2.5
+
+touch_point_x: 1.5
+touch_point_y: 0.0
+touch_point_z: 2.5
+
+
+

@@ -1,0 +1,25 @@
+<library path = "lib/libpedol">
+    <class name="pedol/TrackingNodeletClass" type ="pedol_ns::TrackingNodeletClass" base_class_type = "nodelet::Nodelet">
+        <description> This is TrackingNodeletClass. </description>
+    </class>
+
+    <class name="pedol/VisualNodeletClass" type ="pedol_ns::VisualNodeletClass" base_class_type = "nodelet::Nodelet">
+        <description> This is VisualNodeletClass. </description>
+    </class>
+
+    <class name="pedol/PathDispNodeleteClass" type ="pedol_ns::PathDispNodeleteClass" base_class_type = "nodelet::Nodelet">
+        <description> This is PathDispNodeleteClass. </description>
+    </class>
+
+    <class name="pedol/ErrorCalNodeletClass" type ="pedol_ns::ErrorCalNodeletClass" base_class_type = "nodelet::Nodelet">
+        <description> This is ErrorCalNodeletClass. </description>
+    </class>
+
+    <class name="pedol/TrackingKFNodeletClass" type ="pedol_ns::TrackingKFNodeletClass" base_class_type = "nodelet::Nodelet">
+        <description> This is TrackingKFNodeletClass. </description>
+    </class>
+
+    <class name="pedol/TDTrackingNodeletClass" type ="pedol_ns::TDTrackingNodeletClass" base_class_type = "nodelet::Nodelet">
+        <description> This is TDTrackingNodeletClass. </description>
+    </class>
+</library>

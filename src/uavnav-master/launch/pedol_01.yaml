@@ -1,0 +1,17 @@
+
+takeoff_x: 0.0
+takeoff_y: 0.0
+takeoff_z: 0.5
+
+touch_point1_x: 1.5
+touch_point1_y: 0.0
+touch_point1_z: 0.5
+
+touch_point2_x: 2.5
+touch_point2_y: 0.0
+touch_point2_z: 1.5
+
+touch_point3_x: 3.5
+touch_point3_y: 0.0
+touch_point3_z: 0.5
+
